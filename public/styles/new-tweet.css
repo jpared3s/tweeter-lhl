@@ -1,0 +1,28 @@
+.container form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tweet-text {
+  width: 80%;
+  border: none;
+  border-bottom: solid black;
+}
+
+.tweet {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.counter {
+  font-family: Bungee;
+}
+
+.button {
+  background-color: #4056A1;
+  font-family: Bungee;
+  color: white;
+}

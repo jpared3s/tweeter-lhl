@@ -1,4 +1,30 @@
 .container .feed {
   width: 100%;
+  border-style: solid;
+  padding: 10px;
+}
+.feed:hover {
+  box-shadow: 10px 5px gray;
 }
 
+.feed header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed footer {
+  display: flex;
+  justify-content: space-between;
+  /* font-family: Bungee; */
+  padding: 10px;
+  border-top: solid black;
+  font-size: 20px;
+}
+
+.user-post {
+  border-bottom: solid, black ;
+}
+
+.fa-heart:hover, .fa-flag:hover, .fa-retweet:hover {
+  color: #c99926;
+}

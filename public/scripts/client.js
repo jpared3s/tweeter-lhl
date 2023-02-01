@@ -69,6 +69,18 @@ const createTweetElement = function(tweet) {
 // console.log('++++++++++++++', $tweet)
   return $tweet;
 }
+
+$('.tweet-form').submit(function (evt) {
+  evt.preventDefault();
+  const tweetData = $('#tweet-text').val()
+  //validate data here
+  const serializeTweet = $(this).serialize()
+  console.log("#1 ", tweetData)
+  console.log("#2 ", serializeTweet)
+  console.log("#0 ", this)
+})
+
+
 // createTweetElement(tweetData[1]);
 renderTweets(tweetData);
 

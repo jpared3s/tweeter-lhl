@@ -27,3 +27,23 @@
   font-family: Bungee;
   color: white;
 }
+
+#error-container {
+  margin:10px auto;
+  background-color: rgb(252, 223, 223);
+  border: solid red;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: red;
+  display: none;
+}
+
+#error-message {
+  margin-left: 5px ;
+  margin-right: 5px;
+}

@@ -4,33 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// Test / driver code (temporary). Eventually will get this from the server.
-
 $(document).ready(function() {
-// const tweetData = [
-//   {
-//     "user": {
-//       "name": "Newton",
-//       "avatars": "https://i.imgur.com/73hZDYK.png"
-//       ,
-//       "handle": "@SirIsaac"
-//     },
-//     "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     "created_at": 1461116232227
-//   },
-//   {
-//     "user": {
-//       "name": "Descartes",
-//       "avatars": "https://i.imgur.com/nlhLi3I.png",
-//       "handle": "@rd" },
-//     "content": {
-//       "text": "Je pense , donc je suis"
-//     },
-//     "created_at": 1461113959088
-//   }
-// ]
 
 const escape = function (str) {
   let div = document.createElement("div");
@@ -77,9 +51,11 @@ $('.tweet-form').submit(function (evt) {
   evt.preventDefault();
   const tweetData = $('#tweet-text').val()
   if (!tweetData.length) {
-    alert("No text detected.")
+  $("#error-message").text('No text detected. Please try again.')
+  $("#error-container").slideDown()
   } else if (tweetData.length > 140) {
-    alert("Your post must be less then 140 characters")
+    $("#error-message").text("Your post must be less then 140 characters")
+    $("#error-container").slideDown()
   }
   const serializeTweet = $(this).serialize()
   $.post('http://localhost:8080/tweets', serializeTweet,(result) => {
@@ -95,10 +71,4 @@ const loadTweets = () => {
 }
 
 loadTweets();
-
-// createTweetElement(tweetData[1]);
-// renderTweets(tweetData);
-// Test / driver code (temporary)
-// console.log($tweet); // to see what it looks like
-// $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 })

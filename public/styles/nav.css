@@ -1,33 +1,71 @@
-nav {
-  background-color: #4056A1;
-  height: 120px;
-  width: 100vw;
-  color: #FFFFFF;
-  padding: 0 1.5em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-}
+ /*desktop*/
+ @media only screen and (min-width: 1024px) {
+   nav {
+     background-color: #4056A1;
+     height: 120px;
+     width: 100vw;
+     color: #FFFFFF;
+     padding: 0 1.5em;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: fixed;
+   }
 
-div {
-  padding: 0 1.5em;
-}
+   .nav-title {
+     font-size: xx-large;
+     font-family: Bungee;
+   }
 
-.nav-title {
-  font-family: Bungee;
-}
+   .write-new-tweet {
+     font-size: large;
+   }
 
-div {
-  padding: 0 1.5em;
-}
 
-.click-here {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+   .click-here {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
 
-.click-here i {
-  color: red;
-}
+   .click-here i {
+     color: red;
+   }
+ }
+
+ /*tablet*/
+
+ @media only screen and (max-width: 1023px) {
+   nav {
+     background-color: #4056A1;
+     height: 120px;
+     width: 100vw;
+     color: #FFFFFF;
+     padding: 0 1.5em;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: fixed;
+   }
+
+   .nav-title {
+     font-size: xx-large;
+     font-family: Bungee;
+   }
+
+   .write-new-tweet {
+     font-size: large;
+   }
+
+
+   .click-here {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+   .click-here i {
+     color: red;
+     font-size: large;
+   }
+ }

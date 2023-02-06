@@ -1,49 +1,109 @@
-.container form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
+/*desktop*/
+@media only screen and (min-width: 1024px) {
+  .container form {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #tweet-text {
+    width: 100%;
+    border: none;
+    border-bottom: solid black;
+    background-color: #f4f1ec;
+    font-weight: bold;
+  }
+
+  .tweet {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .counter {
+    font-family: Bungee;
+  }
+
+  .button {
+    background-color: #4056A1;
+    font-family: Bungee;
+    color: white;
+  }
+
+  #error-container {
+    margin: 10px auto;
+    background-color: rgb(252, 223, 223);
+    border: solid red;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: red;
+    display: none;
+  }
+
+  #error-message {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
-#tweet-text {
-  width: 80%;
-  border: none;
-  border-bottom: solid black;
-}
+/*tablet*/
+@media only screen and (max-width: 1023px) {
+  .container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
 
-.tweet {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin-top: 10px;
-}
+  #tweet-text {
+    width: 100%;
+    border: none;
+    border-bottom: solid black;
+    background-color: #f4f1ec;
+    font-weight: bold;
+  }
 
-.counter {
-  font-family: Bungee;
-}
+  .tweet {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
 
-.button {
-  background-color: #4056A1;
-  font-family: Bungee;
-  color: white;
-}
+  .counter {
+    font-family: Bungee;
+  }
 
-#error-container {
-  margin:10px auto;
-  background-color: rgb(252, 223, 223);
-  border: solid red;
-  width: 40%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  color: red;
-  display: none;
-}
+  .button {
+    background-color: #4056A1;
+    font-family: Bungee;
+    color: white;
+  }
 
-#error-message {
-  margin-left: 5px ;
-  margin-right: 5px;
+  #error-container {
+    margin: 10px auto;
+    background-color: rgb(252, 223, 223);
+    border: solid red;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: red;
+    display: none;
+  }
+
+  #error-message {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }

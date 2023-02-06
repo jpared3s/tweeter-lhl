@@ -1,11 +1,55 @@
-.main-header {
-  background-color: #82E0AA ;
-  height: 520px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  color: #FFFFFF;
-  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+/*desktop*/
+@media only screen and (min-width: 1024px) {
+  .header-main {
+    display: flex;
+    height: 520px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 175px 0 0 40px;
+  }
+
+  .main-header {
+    background-color: #82E0AA;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  }
+
+  h2 {
+    margin: -12px 0 0 0;
+  }
+}
+
+/*tablet*/
+
+@media only screen and (max-width: 1023px) {
+  .main-header {
+    background-color: #82E0AA;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+    margin: 0;
+  }
+
+  .header-main {
+    height: 520px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .container {
+    margin: auto;
+    width: 100%;
+  }
 }

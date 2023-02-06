@@ -1,35 +1,87 @@
-.container .feed {
-  width: 100%;
-  padding: 10px;
+/* desktop */
+@media only screen and (min-width: 1024px) {
+  .container .feed {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .feed header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feed footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: solid black;
+    font-size: 20px;
+  }
+
+  .user-post {
+    border-bottom: solid, black;
+  }
+
+  .fa-heart:hover,
+  .fa-flag:hover,
+  .fa-retweet:hover {
+    color: #c99926;
+  }
+
+  .tweet-container {
+    border-style: solid;
+    margin-bottom: 16px;
+    padding: 10px;
+    word-wrap: break-word;
+  }
+
+  .tweet-container:hover {
+    box-shadow: 10px 5px gray;
+  }
+
 }
 
-.feed header {
-  display: flex;
-  justify-content: space-between;
-}
 
-.feed footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  border-top: solid black;
-  font-size: 20px;
-}
 
-.user-post {
-  border-bottom: solid, black ;
-}
 
-.fa-heart:hover, .fa-flag:hover, .fa-retweet:hover {
-  color: #c99926;
-}
+/* tablet */
+@media only screen and (max-width: 1023px) {
+  .container .feed {
+    width: 100%;
+    padding: 10px;
+  }
 
-.tweet-container {
-  border-style: solid;
-  margin-bottom: 16px;
-  padding: 10px;
-}
+  .feed header {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.tweet-container:hover {
-  box-shadow: 10px 5px gray;
+  .feed footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: solid black;
+    font-size: 20px;
+  }
+
+  .user-post {
+    border-bottom: solid, black;
+  }
+
+  .fa-heart:hover,
+  .fa-flag:hover,
+  .fa-retweet:hover {
+    color: #c99926;
+  }
+
+  .tweet-container {
+    border-style: solid;
+    margin-bottom: 16px;
+    padding: 10px;
+    word-wrap: break-word;
+  }
+
+  .tweet-container:hover {
+    box-shadow: 10px 5px gray;
+  }
 }

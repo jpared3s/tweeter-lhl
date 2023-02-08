@@ -61,6 +61,13 @@
   .feed header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  #avatar_username {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   .feed footer {

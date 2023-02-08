@@ -27,8 +27,8 @@ $(document).ready(function() {
     let $tweet = `
   <article class="tweet-container">
   <header>
-    <div>
-      <i class="fa fa-user" aria-hidden="true"></i>
+    <div id = 'avatar_username'>
+    <img src="${escape(tweet.user.avatars)}" class="avatar"> 
     <span>${tweet.user.name}</span>
     </div>
     <div>
@@ -54,9 +54,11 @@ $(document).ready(function() {
     if (!tweetData.length) {
       $("#error-message").text('No text detected. Please try again.');
       $("#error-container").slideDown();
+      return
     } else if (tweetData.length > 140) {
       $("#error-message").text("Your post must be less then 140 characters");
       $("#error-container").slideDown();
+      return
     }
     const serializeTweet = $(this).serialize();
     $.post('http://localhost:8080/tweets', serializeTweet, (result) => {
